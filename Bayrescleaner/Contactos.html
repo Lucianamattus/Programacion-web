@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BayresCleaner</title>
+    <script src="https://kit.fontawesome.com/21fb5eaeb1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/estilos.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Audiowide">
+</head>
+
+<body>
+    <header>
+        <a name="arriba"></a>
+        <div id="contenedorheader"> 
+            <div id="contenedorlogo">
+                <div id="logo">
+                    <a href="index.html"><img src="./Imagenes/logo.png" alt="Logo" width="70px" height="70px"></a>
+                </div>
+                <div class="Bayres">
+                    <p>Bayres Cleaner</p>
+                </div>
+            </div>    
+            <div id="navsup">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Servicios.html">Servicios</a></li>
+                    <li><a href="Sucursales.html">Sucursales</a></li>
+                    <li><a href="Contactos.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header> 
+
+    <section id="Contacto">
+        <div class="cuadroseparador"><p>Contacto</p></div> <br>
+        <p>Consultas o comentarios a:</p>
+        <a href="mailto:mels_nasum@hotmail.com">mels_nasum@hotmail.com</a> <br><br>
+        <div>
+            <p>O completá el formulario:</p> <br> 
+            <div id="formulario"> <br>
+                <form action="mailto:mels_nasum@hotmail.com" name="formulario" method="post" enctype="text/plain">
+                    Nombre <br> <input type="text" name="nombre" id="nombre" size="" maxlength="100">
+                    <br><br>
+                    Email <br> <input type="email" name="email" id="email" size="" maxlength="100" value="@">
+                    <br><br>
+                    Teléfono <br> <input type="text" name="telefono" id="telefono" size="" maxlength="100">
+                    <br><br>
+                    Mensaje
+                    <br><textarea cols="" rows="7" name="mensaje" id="mensaje"></textarea>
+                    <br><br><br>
+                    <input type="submit" name="botonenviar" id="botonenviar" value="Enviar">
+                </form> <br>
+            </div> <br>
+        </div>
+    </section>
+
+    <footer> <br>
+        <nav id="navredesinf">
+            <span>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook-square fa-2xl"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram fa-2xl"></i></a>
+                <a href="mailto:mels_nasum@hotmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-regular fa-envelope fa-2xl"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+            </span>
+            <br><br><br>
+            <a id="irarriba" href="#arriba">Ir arriba</a>
+        </nav>
+        <br>
+        <p> © BayresCleaner 2022 | Todos los derechos reservados </p> <br>
+    </footer>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>

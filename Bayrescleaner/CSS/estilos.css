@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Ubuntu";
+    text-align: center;
+    background-color: rgb(229, 245, 253);;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.cuadroseparador {
+    font-size: 1.5em;
+    padding: 1% 1%;
+    border: 2px solid #000000;
+    font-weight: bold;
+    margin: 2% 35%;
+    background-color: rgb(255, 255, 255) ;
+    border-radius: 30px;
+}
+
+#contenedorheader {
+    position:relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    grid-gap: 1px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(13, 19, 177);
+    box-shadow: 1px 2px 10px 1px rgba(255, 255, 255, 0); 
+}
+
+#contenedorlogo {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    padding: 8%;
+}
+
+.Bayres {
+    color: aliceblue;
+    font-family: "audiowide";
+    text-shadow: 2px 4px black;
+    font-size: 25px;
+}
+
+#quienessomos {
+    border-radius: 10px;
+    background-color: rgb(104, 121, 234);
+    border: 3px double rgb(0, 0, 0);
+    padding-top: 5px;
+    margin: 4px 40px;
+}
+
+#navsup ul {
+    list-style: none;
+    display: flex;
+    gap: 4%;
+}
+
+#navsup ul li {
+    box-shadow: 1px 2px 10px 1px rgba(20,20,20,0.4);
+    border-radius: 10px;
+    background-color: rgb(13, 4, 129);
+    border: 3px double rgb(0, 0, 0);
+    padding:4% 10%;
+}
+
+#navsup ul :hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(27, 102, 142)
+}
+
+#navsup a {
+    font-weight: bold;
+    color: rgb(230, 230, 230);
+}
+
+#navredessup {
+    margin-right: 1%;
+}
+
+#navredessup a {
+    color: white;
+}
+
+#navredessup a :hover {
+    color:rgb(152, 202, 228)
+}
+
+#Servicios {
+    background-color: white;
+}
+
+.contenedorservicios {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.textoservicios {
+    background-color: rgb(193, 229, 249);
+    border: 4px double rgb(16, 20, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 10px 6px rgba(20,20,20,0.4);
+    border-radius: 20px;
+    color: rgb(6, 5, 5);
+    font-weight: bold;
+    
+}
+
+.imagenesservicios {
+    background-color: rgb(193, 229, 249);
+    border: 4px double rgb(16, 20, 254);
+    overflow: hidden;
+    box-shadow: 1px 2px 10px 6px rgba(20,20,20,0.4);
+    border-radius: 20px;
+}
+
+.imagenesservicios ul {
+    display: flex;
+    animation: slideproducts 10s linear infinite ;
+    width: 300%;
+}
+
+@keyframes slideproducts {
+    0% {margin-left: 0%;}
+    25% {margin-left: 0%;}
+
+    30% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
+
+.imagenesservicios li {
+    list-style: none;
+    width: 100%;
+    height: 250px;
+}
+
+.imagenesservicios img {
+    height: 100%;
+    width: 100%;
+}
+
+#formulario {
+    background-color: rgb(13, 19, 177);
+    color: white;
+    border: rgb(0, 0, 0) solid 2px;
+    border-radius: 30px;
+    box-shadow: 1px 2px 10px 6px rgba(20,20,20,0.4);
+    font-weight: bold;
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+#botonenviar {
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(50, 91, 255));
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 2% 15%;
+    border: 2px solid #000000;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(0, 0, 0);
+    cursor:pointer;
+    font-weight: bold;
+}
+
+#botonenviar:hover {
+    color: rgb(63, 63, 63);
+    background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(152, 202, 228));
+
+}
+
+footer {
+    background-color: rgb(13, 19, 177);
+    box-shadow: 1px 2px 10px 5px rgba(20,20,20,0.4);
+    color:rgb(255, 255, 255);
+}
+
+#navredesinf a{
+    color: rgb(255, 255, 255)
+}
+
+#navredesinf a :hover {
+    color: rgb(152, 202, 228)
+}
+
+#irarriba:hover {
+    color: rgb(152, 202, 228)
+}
+
+
+/*celular*/
+@media screen and (max-width: 700px) {
+    #navredessup {display: none;}
+    #contenedorheader {position:relative;
+        display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:1fr;
+            grid-gap: 15px;}
+    .contenedorservicios {grid-template-columns: 1fr 1fr;}
+    #formulario {min-width: 200px;}
+    #navsup ul {display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        grid-gap: 10px;} 
+    #navsup ul li {
+            padding: 10%;}
+    #navsup {
+        margin: 0px 20px;}
+}
+
+/*tablet*/
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    #navredessup {display: none;}
+    #contenedorheader {position:relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:1fr;
+            grid-gap: 1px;}
+    #formulario {min-width: 300px;} 
+    #navsup ul {display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        grid-gap: 15px;} 
+    #navsup ul li {
+            padding: 5%;}
+    #navsup {
+        margin: 0px 20px;}
+}
+  
+/*pc*/
+@media screen and (min-width: 1000px) {
+
+}
